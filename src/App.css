@@ -1,38 +1,91 @@
 .App {
-  text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #16c4c4;
+    font-family: Lato, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    background: #4398dd;
+    box-shadow: 0 2px 4px #000, 0 -1px 2px #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+    outline: none;
+    transition: all 0.2s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:active {
+    box-shadow: 0 0 0 #000, 0 0 0 #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.break,
+.session {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 0.5rem;
+    color: #16c4c4;
+    padding: 0.3rem 0.4rem;
+    box-sizing: border-box;
+    margin: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.control {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    margin: 0rem 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.timer {
+    border: 5px solid #4398dd;
+    background: transparent;
+    margin: 1rem 0.3rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+p {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.8rem auto;
+}
+.controls button {
+    text-align: center;
 }
